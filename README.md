@@ -47,14 +47,13 @@ Learn more about the model [here](https://developer.nvidia.com/blog/build-enterp
 3. Set up your NVIDIA API key:
    - Sign up or log in at [NVIDIA Build](https://build.nvidia.com/nvidia/llama-3_3-nemotron-super-49b-v1)
    - Generate an API key
-   - Set the API key in your environment:
-     ```bash
-     export NVIDIA_API_KEY=your_nvidia_api_key_here
+   - Set the API key in a .evn file:
      ```
-   - configure the api url in python :
-      for aml / azure ai foundry = "https://enpdoint.region.inference.ml.azure.com/v1"
+      NVIDIA_API_KEY=key-here
+      # API_URL=https://aml-aifoundry-endpt.region.inference.ml.azure.com/v1
+      API_URL=https://integrate.api.nvidia.com/v1
+     ```
 
-   - Or add it to your `.env` file if you use one
 
 ## Usage
 
