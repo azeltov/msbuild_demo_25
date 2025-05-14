@@ -19,13 +19,19 @@ import streamlit as st
 from openai import OpenAI
 import matplotlib.pyplot as plt
 from typing import List, Dict, Any, Tuple
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 # === Configuration ===
 api_key = os.environ.get("NVIDIA_API_KEY")
+api_url = os.environ.get("API_URL")
 
 
 client = OpenAI(
-  base_url = "https://llama33-nemotron-s-49b-v1-endpt2.westus.inference.ml.azure.com/v1",
+  base_url = api_url,
   api_key = api_key
 )
 
