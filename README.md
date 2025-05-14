@@ -60,7 +60,7 @@ Learn more about the model [here](https://developer.nvidia.com/blog/build-enterp
 
 1. Run the Streamlit app:
    ```bash
-   streamlit run data_analysis.py
+   streamlit run data_analysis_agent.py
    ```
 
 2. Download example dataset (optional):
